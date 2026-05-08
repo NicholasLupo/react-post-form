@@ -30,9 +30,11 @@ function App() {
     }
   }
 
+  const [checked, setCheck] = useState(false)
+
   return (
     <>
-      <AppMain setFromData={setFromData} stateToggle={stateToggle} currentPost={currentPost} posts={posts} />
+      <AppMain setFromData={setFromData} stateToggle={stateToggle} currentPost={currentPost} posts={posts} checked={checked} setCheck={setCheck} />
     </>
   )
 }
