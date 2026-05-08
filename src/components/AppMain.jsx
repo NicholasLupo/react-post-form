@@ -1,4 +1,4 @@
-export default function AppMain() {
+export default function AppMain({ setFromData, count }) {
 
 
 
@@ -16,8 +16,8 @@ export default function AppMain() {
                                         placeholder="Inserisci il nome dell'autore del blog"
                                         name="author"
                                         type="text"
-                                    /* value={}
-                                    onChange={} */
+                                        value={count.author}
+                                        onChange={setFromData}
                                     />
                                 </div>
                                 <div className="col">
@@ -26,8 +26,8 @@ export default function AppMain() {
                                         placeholder="Inserisci il titolo del blog"
                                         name="title"
                                         type="text"
-                                    /* value={ }
-                                    onChange={ } */
+                                        value={count.title}
+                                        onChange={setFromData}
                                     />
                                 </div>
                                 <div className="col">
@@ -36,8 +36,8 @@ export default function AppMain() {
                                         placeholder="Inserisci il contenuto del blog"
                                         name="content"
                                         type="text"
-                                    /* value={ }
-                                    onChange={ } */
+                                        value={count.content}
+                                        onChange={setFromData}
                                     />
                                 </div>
                             </div>
