@@ -43,8 +43,27 @@ export default function AppMain({ setFromData, count }) {
                             </div>
                         </form>
                     </div>
-                    <div className="col-md-4">
-
+                    <div className="col-md-4 mt-4">
+                        <div className="card h-100">
+                            <div className="card-header">
+                                <div className="row">
+                                    <div className="col">
+                                        <h3 className="mb-0">{count.title}</h3>
+                                    </div>
+                                    <div className="col btn-group rounded-2 justify-content-end align-items-center">
+                                        <input type="checkbox" className="form-check-input" id='check' />
+                                    </div>
+                                </div>
+                            </div>
+                            <div className="card-body">
+                                <div className="blockquote">
+                                    <p>{count.content}</p>
+                                </div>
+                                <footer className="blockquote-footer">
+                                    <cite title={count.author}>{count.author}</cite>
+                                </footer>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
